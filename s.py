@@ -20,7 +20,7 @@ def full_experience():
 
     print(title2)
 
-    text2 = ("""oh yeah I forgot, you're human...\n\n- - - HIDE-IT PHANTOM LOCKER STEALTHGUARD 4000 000 - - -\n\n\n
+    text2 = ("""oh yeah I forgot you're mortal...\n\n- - - HIDE-IT PHANTOM LOCKER STEALTHGUARD 4000 000 - - -\n\n\n
     INSTRUCTIONS FOR HUMANS\n""")
 
     cen_text2 = "\n".join(line.center(80) for line in text2.splitlines())
@@ -126,7 +126,7 @@ elif args.o == "decrypt":
                 decrypted_file_name = args.file[4:]
                 with open("dec_" + decrypted_file_name, "wb") as dec_file:
                     dec_file.write(decrypted_data)
-                    print(f"The file {args.file} has been destro.. I mean decrypted and saved as dec_{decrypted_file_name}\n")
+                    print(f"The file {args.file} has been destro... I mean decrypted and saved as dec_{decrypted_file_name}\n")
             except cryptography.fernet.InvalidToken:
                 print("This is not the right key! What are you up to?!\n")
                 
